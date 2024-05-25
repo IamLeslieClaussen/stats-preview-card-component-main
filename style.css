@@ -1,0 +1,135 @@
+:root {
+  --ff-inter: "Inter", sans-serif;
+  --ff-lexend: "Lexend Deca";
+
+  --clr-db: hsl(240, 32, 27):
+  --clr-cb: hsl(244, 38%, 16%);
+  --clr-v: hsl(277, 64%, 61%);
+
+  --ntrl-100: hsl(0, 0%, 100%);
+  --ntrl-300: hsla(0, 0%, 100%, 0.75);
+  --ntrl-500: hsla(0, 0%, 100%, 0.6);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+ 
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+body {
+    background-color: rgb(2, 5, 47);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: var(--ff-inter);
+}
+
+.wrapper {
+    max-width: 300px;
+    background-color:  hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+img {
+    width: 300px;
+    filter: brightness(0.8) hue-rotate(270deg);
+    
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.grid__text {
+    font-size: 0.70rem;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.main__text {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.text__wrapper {
+    padding: 2rem;
+}
+
+.companies, .templates, .queries {
+    margin-bottom: 1.5rem;
+
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        min-width: fit-content;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 900px;
+        max-height: 600px;
+        
+    }
+    img {
+        width: 400px;
+    }
+
+    .text__wrapper {
+        max-width: 500px;
+        max-height: 600px;
+        padding: 4rem;
+        text-align: left;
+    }
+
+    .text__wrapper {
+        text-align: left;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .grid {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: -1rem;
+        transform: translateX(-35px);
+        
+        
+    }
+    p {
+        font-size: 1;
+        line-height: 1.5;
+    }
+
+   
+}
+
